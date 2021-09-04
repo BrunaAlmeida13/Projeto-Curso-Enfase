@@ -13,17 +13,16 @@ class ListaQuestaoMultiplaEscolha extends Component {
     
     render() {
         return(
-            <ul>
+            <div>
                 {this.props.questoes.map((questaoCriada, index) => {
                     return (
-                    <li key={index}>
-                        <div>
+                        <div key={index}>
                             <QuestaoERespostas questao={questaoCriada.questao} resp1={questaoCriada.resp1} resp2={questaoCriada.resp2} resp3={questaoCriada.resp3} resp4={questaoCriada.resp4} respCorreta={questaoCriada.respCorreta}/>
                         </div>
-                    </li> 
+
                     );
                 })}
-            </ul>
+            </div>
         );
     }
 }

@@ -46,14 +46,14 @@ class FormularioQuestaoERespostas extends Component {
 
     render() {
         return (
-            <form onSubmit={this._criarQuestao.bind(this)}>
-                <p>Pergunta:<input type="text" onChange={this._handleMudancaQuestao.bind(this)}></input></p>
+            <form onSubmit={this._criarQuestao.bind(this)} className="form-body">
+                <p>Pergunta:<input type="text" onChange={this._handleMudancaQuestao.bind(this)} className="input-pergunta"></input></p>
                 <p>Resposta 1:<input type="text" onChange={this._handleMudancaResp1.bind(this)}></input></p>
                 <p>Resposta 2:<input type="text" onChange={this._handleMudancaResp2.bind(this)}></input></p>
                 <p>Resposta 3:<input type="text" onChange={this._handleMudancaResp3.bind(this)}></input></p>
                 <p>Resposta 4:<input type="text" onChange={this._handleMudancaResp4.bind(this)}></input></p>
 
-                <p>Número da resposta correta:<input type="number" min="1" max="4" onChange={this._handleRespostaCorreta.bind(this)}></input></p>
+                <p>Número da resposta correta:<input type="number" min="1" max="4" onChange={this._handleRespostaCorreta.bind(this)} className="input-resp"></input></p>
 
                 <p><button>Criar questão</button></p>
             </form>

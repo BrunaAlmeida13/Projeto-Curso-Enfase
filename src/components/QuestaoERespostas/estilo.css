@@ -1,3 +1,11 @@
 .questao-e-respostas {
-    color: aqua;
+    border-bottom: 1px gray solid;
+    border-width: thin;
+    margin-top: 40px;
+}
+
+.div-input-box {
+    position: relative;
+    margin-left: -370px;
+    justify-content: left;
 }

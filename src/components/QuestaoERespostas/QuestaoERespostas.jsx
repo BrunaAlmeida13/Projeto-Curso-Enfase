@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, {Component} from "react";
 
 import "./estilo.css";
@@ -5,16 +6,20 @@ import "./estilo.css";
 class QuestaoERespostas extends Component {
     render() {
         return(
-            <section className="questao-e-respostas">
-                <header className="questao-e-respostas_cabecalho">
-                    <p>{this.props.questao}</p>
-                </header>
-                <p><input type="radio" name="rdResp" value={this.props.resp1}></input></p>
-                <p><input type="radio" name="rdResp" value={this.props.resp2}></input></p>
-                <p><input type="radio" name="rdResp" value={this.props.resp3}></input></p>
-                <p><input type="radio" name="rdResp" value={this.props.resp4}></input></p>
-                <p>Questão correta: {this.props.respCorreta}</p>
-            </section>
+            <div className="questao-e-respostas">
+                <p>Pergunta: {this.props.questao}</p>
+            
+                <div className="div-input-box">
+                <input type="radio" name="rdResp" id="resp1"/>{this.props.resp1}
+                <input type="radio" name="rdResp" id="resp2"/>{this.props.resp2}
+                <input type="radio" name="rdResp" id="resp3"/>{this.props.resp3}
+                <input type="radio" name="rdResp" id="resp4"/>{this.props.resp4}
+                </div>
+
+                <p className="questao-correta" /*A proposta aqui seria a de aparecer a resposta correta apenas quando a questão for respondida.*/>
+                    Questão correta: {this.props.respCorreta}
+                </p> 
+            </div>
         );
     }
 }

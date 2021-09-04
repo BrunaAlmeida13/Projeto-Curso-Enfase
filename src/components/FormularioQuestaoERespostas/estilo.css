@@ -1,0 +1,29 @@
+form.form-body {
+    margin-right: 15px;
+}
+
+input {
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 750px;
+    height: 22px;
+    margin-left: 10px;
+}
+
+.input-pergunta {
+    margin-left: 29px;
+}
+
+.input-resp {
+    width: 40px;
+    font-size: 21px;
+}
+
+button {
+    font-size: 20px;
+}
+
+input:hover, button:hover {
+    background-color: rgba(233, 220, 220, 0.747);
+}

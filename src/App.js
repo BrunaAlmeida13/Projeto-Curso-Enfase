@@ -26,7 +26,7 @@ class App extends Component{
 
   render() {
     return (
-      <section>
+      <section className="body">
         <h1>Gerenciador de questões de múltipla escolha</h1>
 
         <FormularioQuestaoERespostas criarQuestao={this.criarQuestao.bind(this)}/>
