@@ -5,7 +5,6 @@ import './assets/index.css';
 import ListaQuestaoMultiplaEscolha from "./components/ListaQuestaoMultiplaEscolha";
 import FormularioQuestaoERespostas from "./components/FormularioQuestaoERespostas";
 
-//Onde a aplicação roda
 class App extends Component{
   
   constructor() {
